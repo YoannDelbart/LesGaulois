@@ -25,7 +25,7 @@ public class Gaulois {
 	
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
-		romain.recevoirCoup(force / 3);
+		romain.recevoirCoup((force / 3)*effetPotion);
 		
 		
 	}
@@ -39,13 +39,10 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix.getNom()); 
 		System.out.println(asterix);
-		asterix.prendreParole();
-		
-		
-		 //TODO créer un main permettant de tester la classe Gaulois 
-		
+		asterix.prendreParole();	
 		
 	}
+	
 	
 	
 }
