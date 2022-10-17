@@ -29,6 +29,11 @@ public class Gaulois {
 		
 		
 	}
+	
+	public void boirePotion(int forcePotion) {
+		effetPotion = forcePotion;
+		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois décuplé");
+	}
 
 	@Override
 	public String toString() {
@@ -37,7 +42,7 @@ public class Gaulois {
 		
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix", 8);
-		System.out.println(asterix.getNom()); 
+		//System.out.println(asterix.getNom()); 
 		System.out.println(asterix);
 		asterix.prendreParole();	
 		
